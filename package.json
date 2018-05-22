@@ -1,0 +1,17 @@
+{
+  "name": "parcel-alias-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=production parcel build index.html"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.10",
+    "package-that-uses-lodash-assign": "^1.0.0",
+    "parcel-bundler": "^1.8.1"
+  },
+  "alias": {
+    "lodash": "./lodash.js"
+  }
+}
